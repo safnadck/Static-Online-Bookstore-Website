@@ -1,0 +1,29 @@
+<!-- templates/contact.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-info">
+            <p>Visit us: 123 Book St., Reading City</p>
+            <p>Email: info@bookhaven.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </section>
+{% endblock %}

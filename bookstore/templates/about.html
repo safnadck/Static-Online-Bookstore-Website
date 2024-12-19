@@ -1,0 +1,24 @@
+<!-- templates/about.html -->
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <section class="about">
+        <h2>About Book Haven</h2>
+        <p>At Book Haven, we bring readers and stories together!</p>
+        <img src="{% static 'images/bookstore.jpg' %}" alt="Bookstore Image">
+    </section>
+
+    <section class="highlights">
+        <div class="highlight-card">
+            <h4>Wide Selection of Genres</h4>
+        </div>
+        <div class="highlight-card">
+            <h4>Affordable Prices</h4>
+        </div>
+        <div class="highlight-card">
+            <h4>Fast Shipping</h4>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,65 @@
+/* static/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header nav h1 {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.book-card {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 2rem;
+}

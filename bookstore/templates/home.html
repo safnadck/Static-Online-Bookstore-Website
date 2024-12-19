@@ -1,0 +1,23 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="hero">
+        <img src="{% static 'images/hero.jpg' %}" alt="Bookshelf">
+        <h2>Discover Your Next Favorite Book!</h2>
+    </section>
+
+    <section class="featured-books">
+        <h3>Featured Books</h3>
+        <div class="books-grid">
+            <div class="book-card">
+                <img src="{% static 'images/book1.jpg' %}" alt="Book Cover">
+                <h4>To Kill a Mockingbird</h4>
+                <p>By Harper Lee</p>
+                <p>A gripping novel of a young girl's coming of age during a time of racial tension.</p>
+            </div>
+            <!-- Repeat for other books -->
+        </div>
+        <a href="/books/" class="btn">Browse All Books</a>
+    </section>
+{% endblock %}
